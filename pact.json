@@ -1,0 +1,29 @@
+{
+  "consumer": {
+    "name": "consumer X"
+  },
+  "provider": {
+    "name": "provider A"
+  },
+  "interactions": [
+    {
+      "description": "My ping test",
+      "providerState": "Application is able to answer a ping request",
+      "request": {
+        "method": "GET",
+        "path": "/ping",
+        "headers": {
+          "Content-Type": "text/plain",
+        }
+      },
+      "response": {
+        "status": 200,
+      }
+    },
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "0.0.1-SNAPSHOT"
+    }
+  }
+}
