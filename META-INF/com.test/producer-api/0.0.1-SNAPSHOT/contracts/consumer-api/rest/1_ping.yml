@@ -1,0 +1,17 @@
+description: |
+  My ping test
+  ```
+  given:
+     app is up and running
+  when:
+     a request is made to check if it is available
+  then:
+     it will answer with pong
+   ```
+request:
+  method: GET
+  url: /ping
+response:
+  status: 200
+  headers:
+    Content-Type: text/plain
